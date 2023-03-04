@@ -8,7 +8,7 @@ This is a collaboration, open-source project. Main objectives are practice githu
 
 Please read the resources below. 
 - First fork this github repo and create a clone to work on it yourself.
-- Then pull the repo to your local machine
+- Then pull the repo to your local machine and run npm install && npm start in your terminal.
 - Create a new branch to work on a new task or a feature. Make your changes there. 
 - Once finished, push the code to your remote repo. 
 - Create a Pull Request from your remote branch to master branch of the repo which you forked initially.
