@@ -1,7 +1,9 @@
+import Notifications from "./components/Notifications";
+
 function App() {
   return (
     <div className="App">
-      NOTIFICATION PAGE
+      <Notifications />
     </div>
   );
 }

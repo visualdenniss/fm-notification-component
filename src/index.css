@@ -24,8 +24,12 @@
 }
 
 body {
-font-family: 'Plus Jakarta Sans', sans-serif;
-font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  background-color: var(--light-grayish-blue-1);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 ul {
@@ -39,3 +43,5 @@ a {
 img {
   display: block;
 }
+
+
