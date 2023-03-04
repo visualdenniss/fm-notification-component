@@ -11,7 +11,7 @@ Step 5: Add inverse data flow
 Do a CSS Reset
 
 Breakdown: ✅
-![Components Breakdown](./src/notifications-components.pgn)
+![Components Breakdown](./src/notifications-components.png)
 
 Components Hierarchy: ✅ 
 
