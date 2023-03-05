@@ -25,6 +25,20 @@ Please read the resources below.
 
 See Workflow.md 
 
+When making a new branch 
+  - make sure repo fork is synced with 'forked', and get to 'master' branch
+  - git checkout -b nextbranch
+  - git branch --set-upstream-to=origin/master
+  - git pull
+  - start making changes
+  - git add .
+  - git commit -m 'commit keywords from the current branch'
+  - git push 
+
+<small>At this point I have just saved the note below and list just above. I save the environment while being in the newest branch. If I run git checkout < desiredbranch > the directory will be different for each of the now 3 branches.</smalll>
+If you see something wrong here (like I don't have a fetch in here anywhere), make a new list below this line with the order of operations so reference can be made to the current 'mindset' of the order above.
+
+
 ### The challenge
 
 Users should be able to:
