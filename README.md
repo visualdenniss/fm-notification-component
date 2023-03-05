@@ -33,10 +33,21 @@ When making a new branch
   - start making changes
   - git add .
   - git commit -m 'commit keywords from the current branch'
-  - git push 
+  - git push __NO__
+  - git push origin <branchwithcurrentchanges> __this will create the new branch on the remote (AKA MY REPOSITORY ON GITHUB.COM) repo and leave master alone__
+    - this created an alert on github that wants me to compare & pull request. I dont know why I would do a pull request from my own repo, but lets see whats up.
+  - 
 
-<small>At this point I have just saved the note below and list just above. I save the environment while being in the newest branch. If I run git checkout < desiredbranch > the directory will be different for each of the now 3 branches.</smalll>
+>>
+ At this point I have just saved the note below and list just above. I save the environment while being in the newest branch. If I run git checkout < desiredbranch > the directory will be different for each of the now 3 branches.
+>>
+
+
+
+***
 If you see something wrong here (like I don't have a fetch in here anywhere), make a new list below this line with the order of operations so reference can be made to the current 'mindset' of the order above.
+***
+
 
 
 ### The challenge
