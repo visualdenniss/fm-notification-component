@@ -1,5 +1,5 @@
 import Notifications from "./components/Notifications";
-import Header from './components/Header'
+import NotificationHeader from './components/NotificationHeader'
 import './App.scss'
 
 
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-    <Header/>
+    <NotificationHeader/>
       <Notifications />
     </div>
   );

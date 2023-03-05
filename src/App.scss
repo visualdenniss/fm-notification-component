@@ -1,7 +1,6 @@
 $primary-color: #1bb1ecee;
 $secondary-color: #0fbea7;
 $notification-bg: #d43;
-$size: 50px;
 
 
 body{
@@ -15,34 +14,15 @@ body{
     max-height:fit-content;
 }
 .notification-icon {
-//   width: $size; 
-//   height: $size;
-  position: relative;
-  background-color: $notification-bg;
+  margin:30px;
+  height:auto;
+  background-color: #2e2be2;
+  color:whitesmoke;
+  font-weight: 800;
+  border-radius: 14px;
+  padding:3%;
+  font-size: 35px;
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 36px;
-    border-radius: 30%;
-    background-color: $notification-bg;
-    border: 5px solid $primary-color;
-    animation: pulse 4s infinite;
-  }
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 }
 
 
@@ -71,31 +51,28 @@ body{
 h1{
     font-family:'PlusJakartaSans-Variable';
     font-size:40px;
+    margin-left:20px;
     font-weight: bold;
-    letter-spacing: .02in;
+    letter-spacing: .01in;
     
 }
 
 
 
 
-
-p{
-    font-size:20px;
-}
 .header-wrapper{
-        display:flex;
-        width: 100%;
-        justify-content: space-around;
+        display:inline-flex;
+        width: 80%;
+        justify-content: space-between;
         align-items: center;
 
 
 @media (max-width: 600px){
 
-        flex-direction: column;
+        flex-direction:row;
 
         h1{
-            text-align: center;
+            text-align: start;
         }
 
 
@@ -106,24 +83,6 @@ p{
 
 
 }}
-
-
-.elemnent1{
-
-height:50%;
-width:50%;
-
+button{
+    font-size:25px;
 }
-.m{
-    height:34px;
-    width:329px;
-    margin-left:20px;
-    border-bottom: 4px solid red;
-}
-
-.elemnent2{
-
-    height:50%;
-    width:50%;
-    
-    }
