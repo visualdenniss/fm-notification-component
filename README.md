@@ -36,11 +36,8 @@ When making a new branch
   - git push __NO__
   - git push origin <branchwithcurrentchanges> __this will create the new branch on the remote (AKA MY REPOSITORY ON GITHUB.COM) repo and leave master alone__
     - this created an alert on github that wants me to compare & pull request. I dont know why I would do a pull request from my own repo, but lets see whats up.
-  - 
+    - also, while it may be nice to see the changes in each branch individually, I do NOT want to be forced to have to click buttons on github, potentially disturbing other branches or making unwanted changes. a button should not even be an option on other branched, dont need or want a pull request on other branches. their purpose is to see the changes in history and keep the material as is for that branch. - this is the case for every branch as well - I'm not understanding the point of a new branch for every change if it just wants to update every branch to the current state. Makes no sense to me but maybe I am viewing things wrong...
 
->>
- At this point I have just saved the note below and list just above. I save the environment while being in the newest branch. If I run git checkout < desiredbranch > the directory will be different for each of the now 3 branches.
->>
 
 
 
