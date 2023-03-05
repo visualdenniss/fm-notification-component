@@ -1,0 +1,129 @@
+$primary-color: #1bb1ecee;
+$secondary-color: #0fbea7;
+$notification-bg: #d43;
+$size: 50px;
+
+
+body{
+    // border:3px solid black;
+
+}
+
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height:fit-content;
+}
+.notification-icon {
+//   width: $size; 
+//   height: $size;
+  position: relative;
+  background-color: $notification-bg;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 36px;
+    border-radius: 30%;
+    background-color: $notification-bg;
+    border: 5px solid $primary-color;
+    animation: pulse 4s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+
+
+
+@font-face {
+    font-family: 'PlusJakartaSans-Variable';
+    src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.no-button{
+    background-color: white;
+    border:none;
+    font-weight: 100;
+    color:slategray;
+    cursor: pointer;
+}
+
+.no-button:hover{
+    color:slateblue;
+    font-weight:500;
+}
+
+h1{
+    font-family:'PlusJakartaSans-Variable';
+    font-size:40px;
+    font-weight: bold;
+    letter-spacing: .02in;
+    
+}
+
+
+
+
+
+p{
+    font-size:20px;
+}
+.header-wrapper{
+        display:flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+
+@media (max-width: 600px){
+
+        flex-direction: column;
+
+        h1{
+            text-align: center;
+        }
+
+
+
+        p{
+            text-align:center;
+        }
+
+
+}}
+
+
+.elemnent1{
+
+height:50%;
+width:50%;
+
+}
+.m{
+    height:34px;
+    width:329px;
+    margin-left:20px;
+    border-bottom: 4px solid red;
+}
+
+.elemnent2{
+
+    height:50%;
+    width:50%;
+    
+    }
