@@ -1,25 +1,18 @@
 import React from 'react'
 import './Notification.css'
 
-const Notification = ({notification, notifications, setNotifications}) => {
+const Notification = ({notification, onMarkRead}) => {
 
     const {id, link, read, type, author ,timestamp} = notification
     const notif = notification.notification
 
-    const handleMarkRead = (id) => {
-        if(!notification.read) {
-            const newNotificationList = notifications.map((notification) => {
-                if (notification.id === id) {
-                    return {...notification, read: true}
-                } 
-                return notification
-            })
-            setNotifications(newNotificationList)
-        }
+    const handleClick = () =>  {
+        if(!notification.read)
+        onMarkRead(id)
     }
 
     return (
-        <li id={id} onClick={()=> handleMarkRead(id)} className={!read  ? 'unread' : ''}>
+        <li id={id} onClick={handleClick} className={!read  ? 'unread' : ''}>
             <div className="left">
                 <img src={author.img} alt="" />
             </div>

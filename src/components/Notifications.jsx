@@ -10,6 +10,16 @@ const Notifications = () => {
     const [notifications, setNotifications] = useState('')
     const [isLoading, setIsLoading] = useState(true)
 
+    const handleMarkRead = (id) => {
+            const newNotificationList = notifications.map((notification) => {
+                if (notification.id === id) {
+                    return {...notification, read: true}
+                } 
+                return notification
+            })
+            setNotifications(newNotificationList)
+    }
+
     useEffect(()=> {
 
         const getData = async () => {
@@ -39,7 +49,9 @@ const Notifications = () => {
             setNotifications={setNotifications} />
             <NotificationList 
             notifications={notifications} 
-            setNotifications={setNotifications} />
+            setNotifications={setNotifications}
+            onMarkRead={handleMarkRead}
+            />
              </>
             }
         </div>

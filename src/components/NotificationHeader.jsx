@@ -6,12 +6,12 @@ const NotificationHeader = ({notifications, setNotifications}) => {
     const notificationCount = notifications.filter((notification) => 
     notification.read === false).length
 
-    const handleClick = () => {
+
+    const handleMarkRead = (boolean) => {
         const allReadList = notifications.map((notification)=> 
         {
-            return {...notification, read: true}
+            return {...notification, read: boolean}
         })
-
         setNotifications(allReadList)
     }
 
@@ -23,7 +23,10 @@ const NotificationHeader = ({notifications, setNotifications}) => {
                 <span>{notificationCount}</span>
                 }
             </h1>
-            <button onClick={handleClick}>Mark all as read</button>
+            {notificationCount === 0 ? 
+            <button onClick={()=> handleMarkRead(false)}>Mark all as unread</button> :
+            <button onClick={()=> handleMarkRead(true)}>Mark all as read</button>
+            }
         </header>
     )
 }

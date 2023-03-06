@@ -1,7 +1,7 @@
 import React from 'react'
 import Notification from './Notification'
 
-const NotificationList = ({notifications, setNotifications}) => {
+const NotificationList = ({notifications, onMarkRead}) => {
 
     const style = {
         display: 'flex',
@@ -12,8 +12,7 @@ const NotificationList = ({notifications, setNotifications}) => {
         <ul style={style}>
             {notifications?.map((notification)=> {
                 return <Notification key={notification.id} 
-                 notifications={notifications}
-                 setNotifications={setNotifications}
+                 onMarkRead={onMarkRead}
                  notification={notification} />
             })}
         </ul>
