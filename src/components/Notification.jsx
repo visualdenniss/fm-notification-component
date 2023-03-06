@@ -1,37 +1,60 @@
 import React from 'react'
-import mark from '../assets/images/avatar-mark-webber.webp'
-import chess from '../assets/images/image-chess.webp'
 import './Notification.css'
 
-const Notification = () => {
+const Notification = ({notification, notifications, setNotifications}) => {
+
+    const {id, link, read, type, author ,timestamp} = notification
+    const notif = notification.notification
+
+    const handleMarkRead = (id) => {
+        if(!notification.read) {
+            const newNotificationList = notifications.map((notification) => {
+                if (notification.id === id) {
+                    return {...notification, read: true}
+                } 
+                return notification
+            })
+            setNotifications(newNotificationList)
+        }
+    }
+
     return (
-        <li>
+        <li id={id} onClick={()=> handleMarkRead(id)} className={!read  ? 'unread' : ''}>
             <div className="left">
-                <img src={mark} alt="" />
+                <img src={author.img} alt="" />
             </div>
-            <div className="right">
+            <div className={author.message ? 'right type-private-message' : 'right'}>
                 <div className="notification-message-container">
                     <p>
                         <span className='author-name'>
-                        Mark Webber
+                        {author.name}
                         </span>
                         {' '}
-                        reacted to your recent post
+                        {notif}
                         {' '}
-                        <span className='notification-link'>
-                        {/* My first tournament today! */}
+                        <span  className={type === 'group' ? 
+                        'notification-link notification-link-type-group' : 
+                        "notification-link"
+                        }>
+                        {link && link}
                         </span>
                         {' '}
+                        {!read &&
                         <span className="unread-red-dot"/>
+                        }
                     </p>
-                    <p className='timestamp'>1m ago</p>
+                    <p className='timestamp'>{timestamp}</p>
                 </div>
-                {/* <img src={chess} className='picture-img' alt="" /> */}
-                {/* <div className="private-message">
+                {author.picture && 
+                <img src={author.picture} className='picture-img' alt="" />
+                }
+                {author.message && read && 
+                <div className="private-message">
                     <p>
                     Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game. 
                     </p>
-                </div> */}
+                </div>    
+                }
             </div>
         </li>
     )

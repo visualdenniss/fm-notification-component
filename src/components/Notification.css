@@ -8,6 +8,7 @@ li {
 
 .unread {
   background-color: var(--very-light-grayish-blue);
+  cursor: pointer;
 }
 
 .left {
@@ -46,15 +47,31 @@ li {
   color: var(--very-dark-blue);
   font-family: "Plus Jakarta Sans Ex";
   margin-right: 2px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.author-name:hover {
+  color: var(--dark-grayish-blue);
 }
 
 .notification-link {
   font-family: "Plus Jakarta Sans Ex";
   margin-left: 2px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.notification-link:hover {
+  color: var(--grayish-blue);
 }
 
 .notification-link-type-group {
   color: var(--primary-blue);
+}
+
+.notification-link-type-group:hover {
+  color: var(--dark-grayish-blue);
 }
 
 .timestamp {
@@ -78,6 +95,12 @@ li {
   width: 40px;
   height: 40px;
   margin-left: auto;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.picture-img:hover {
+  opacity: 0.75;
 }
 
 .private-message {

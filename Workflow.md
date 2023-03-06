@@ -32,12 +32,17 @@ Components Hierarchy: ✅
 
 ### Step 3: Find the minimal but complete representation of UI state
 
-Decide and list the states (read/unread) and different data types (comment, follow etc.) to be rendered.
+Decide and list the states (read/unread) and different data types (comment, follow etc.) to be rendered. ✅
 
 ### Step 4: Identify where your state should live
 
--
+✅
 
 ### Step 5: Add inverse data flow
 
-- Update the state of notifications onClick (Mark as read and on notification item itself)
+- Update the state of notifications onClick (Mark as read ✅ and on notification item itself ✅)
+
+Refactor to cleaner code
+
+Animations
+Make it responsive

@@ -1,14 +1,29 @@
 import React from 'react'
 import './NotificationHeader.css'
 
-const NotificationHeader = () => {
+const NotificationHeader = ({notifications, setNotifications}) => {
+
+    const notificationCount = notifications.filter((notification) => 
+    notification.read === false).length
+
+    const handleClick = () => {
+        const allReadList = notifications.map((notification)=> 
+        {
+            return {...notification, read: true}
+        })
+
+        setNotifications(allReadList)
+    }
+
     return (
         <header>
             <h1>
                 Notifications
-                <span>3</span>
+                {notificationCount !== 0 &&
+                <span>{notificationCount}</span>
+                }
             </h1>
-            <button>Mark all as read</button>
+            <button onClick={handleClick}>Mark all as read</button>
         </header>
     )
 }
