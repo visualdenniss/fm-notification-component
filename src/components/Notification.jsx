@@ -1,7 +1,9 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import './Notification.css'
+import { notificationMotion } from '../animations'
 
-const Notification = ({notification, onMarkRead}) => {
+const Notification = ({notification, onMarkRead, index}) => {
 
     const {id, link, read, type, author ,timestamp} = notification
     const notif = notification.notification
@@ -12,7 +14,19 @@ const Notification = ({notification, onMarkRead}) => {
     }
 
     return (
-        <li id={id} onClick={handleClick} className={!read  ? 'unread' : ''}>
+        <motion.li 
+        // initial={{opacity: 0,
+        // y: 10}}
+        // animate={{opacity:1, 
+        // y: 0,
+        // transition: {
+        //     duration: .8, delay: 1 + (0.05 * index), 
+        //     ease: [0.25, 0.46, 0.45, 0.94]
+        // }}}
+        
+        id={id} 
+        onClick={handleClick} 
+        className={!read  ? 'unread' : ''}>
             <div className="left">
                 <img src={author.img} alt="" />
             </div>
@@ -49,7 +63,7 @@ const Notification = ({notification, onMarkRead}) => {
                 </div>    
                 }
             </div>
-        </li>
+        </motion.li>
     )
 }
 

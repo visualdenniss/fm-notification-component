@@ -1,5 +1,7 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import Notification from './Notification'
+import { basic } from '../animations'
 
 const NotificationList = ({notifications, onMarkRead}) => {
 
@@ -9,13 +11,16 @@ const NotificationList = ({notifications, onMarkRead}) => {
     }
 
     return (
-        <ul style={style}>
-            {notifications?.map((notification)=> {
+        <motion.ul 
+        // {...basic} 
+        style={style}>
+            {notifications?.map((notification, index)=> {
                 return <Notification key={notification.id} 
                  onMarkRead={onMarkRead}
+                 index={index}
                  notification={notification} />
             })}
-        </ul>
+        </motion.ul>
     )
 }
 

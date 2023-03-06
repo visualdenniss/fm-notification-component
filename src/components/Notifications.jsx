@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import {motion} from 'framer-motion'
 import NotificationHeader from './NotificationHeader'
 import NotificationList from './NotificationList'
 import './Notifications.css'
 import Loader from './Loader/Loader'
+import { basic } from '../animations'
 
 const Notifications = () => {
 
@@ -39,7 +41,9 @@ const Notifications = () => {
 
 
     return (
-        <div className='notifications-container'>
+        <motion.div
+        // {...basic}
+        className='notifications-container'>
             {isLoading ? 
             <Loader/>
             : 
@@ -54,7 +58,7 @@ const Notifications = () => {
             />
              </>
             }
-        </div>
+        </motion.div>
     )
 }
 
