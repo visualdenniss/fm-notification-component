@@ -109,6 +109,12 @@ li {
   border-radius: 5px;
   color: var(--dark-grayish-blue);
   margin-top: 12px;
+  transition: var(--transition);
+}
+
+.private-message:hover {
+  background-color: var(--light-grayish-blue-2);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 400px) {

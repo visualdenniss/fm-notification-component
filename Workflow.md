@@ -45,4 +45,4 @@ Decide and list the states (read/unread) and different data types (comment, foll
 Refactor to cleaner code ✅
 
 Animations
-Make it responsive
+Make it responsive ✅
