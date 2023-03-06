@@ -7,7 +7,7 @@
             "timestamp": "3 min ago",
             "author": {
                 "name": "Mark Webber",
-                "img": ""
+                "img": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1678102302/notifications-page-fm/avatar-mark-webber_g1aquy.webp"
             },
             "link": "My first tournament today!",
             "read": "false"
@@ -19,7 +19,7 @@
             "timestamp": "5 min ago",
             "author": {
                 "name": "Angela Gray",
-                "img": ""
+                "img": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1678102302/notifications-page-fm/avatar-angela-gray_sfeiks.webp"
             },
             "link": "",
             "read": "false"
@@ -31,7 +31,7 @@
             "timestamp": "1 day ago",
             "author": {
                 "name": "Jacob Thompson",
-                "img": ""
+                "img": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1678102302/notifications-page-fm/avatar-jacob-thompson_pgfmmn.webp"
             },
             "link": "Chess Club",
             "read": "false"
@@ -43,7 +43,7 @@
             "timestamp": "5 days ago",
             "author": {
                 "name": "Rizky Hasanuddin",
-                "img": "",
+                "img": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1678102303/notifications-page-fm/avatar-rizky-hasanuddin_xjs4v0.webp",
                 "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
             },
             "link": "",
@@ -56,8 +56,8 @@
             "timestamp": "1 week ago",
             "author": {
                 "name": "Kimberly Smith",
-                "img": "",
-                "picture": ""
+                "img": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1678102302/notifications-page-fm/avatar-kimberly-smith_rso7kx.webp",
+                "picture": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1678102303/notifications-page-fm/image-chess_uwbfwx.webp"
             },
             "link": "",
             "read": "false"
@@ -69,7 +69,7 @@
             "timestamp": "2 weeks ago",
             "author": {
                 "name": "Nathan Peterson",
-                "img": ""
+                "img": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1678102302/notifications-page-fm/avatar-nathan-peterson_xqbtj4.webp"
             },
             "link": "5 end-game strategies to increase your win rate",
             "read": "false"
@@ -81,7 +81,7 @@
             "timestamp": "2 weeks ago",
             "author": {
                 "name": "Anna Kim",
-                "img": ""
+                "img": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1678102303/notifications-page-fm/avatar-anna-kim_r25yb7.webp"
             },
             "link": "Chess Club",
             "read": "false"

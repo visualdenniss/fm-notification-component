@@ -5,10 +5,10 @@ import './Notifications.css'
 
 const Notifications = () => {
     return (
-        <main>
+        <div className='notifications-container'>
             <NotificationHeader />
             <NotificationList />
-        </main>
+        </div>
     )
 }
 

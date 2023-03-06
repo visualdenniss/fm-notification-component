@@ -1,13 +1,14 @@
 import React from 'react'
+import './NotificationHeader.css'
 
 const NotificationHeader = () => {
     return (
         <header>
-            <div>
-                LEFT SIDE
-                <div>COUNT</div>
-            </div>
-            <div>RIGHT SIDE</div>
+            <h1>
+                Notifications
+                <span>3</span>
+            </h1>
+            <button>Mark all as read</button>
         </header>
     )
 }

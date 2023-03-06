@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+header > h1 {
+  font-size: 21px;
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  font-family: "Plus Jakarta Sans Ex";
+}
+
+header > h1 > span {
+  margin-left: 10px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  color: var(--dark-grayish-blue);
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+header button:hover {
+  color: var(--very-dark-blue);
+}

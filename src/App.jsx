@@ -2,9 +2,9 @@ import Notifications from "./components/Notifications";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Notifications />
-    </div>
+    </main>
   );
 }
 

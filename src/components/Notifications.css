@@ -1,3 +1,15 @@
 main {
-    
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.notifications-container {
+  background-color: var(--white);
+  padding: 35px 30px 15px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 730px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
