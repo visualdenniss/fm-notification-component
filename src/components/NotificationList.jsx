@@ -15,7 +15,8 @@ const NotificationList = ({notifications, onMarkRead}) => {
         {...basic} 
         style={style}>
             {notifications?.map((notification, index)=> {
-                return <Notification key={notification.id} 
+                return <Notification 
+                 key={notification.id} 
                  onMarkRead={onMarkRead}
                  index={index}
                  notification={notification} />

@@ -53,7 +53,6 @@ const Notifications = () => {
             setNotifications={setNotifications} />
             <NotificationList 
             notifications={notifications} 
-            setNotifications={setNotifications}
             onMarkRead={handleMarkRead}
             />
              </>
