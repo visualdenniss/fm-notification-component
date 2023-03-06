@@ -34,7 +34,7 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
-  background-color: var(--light-grayish-blue-1);
+  background-color: var(--very-light-grayish-blue);
   min-height: 100vh;
 }
 

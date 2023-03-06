@@ -42,7 +42,7 @@ const Notifications = () => {
 
     return (
         <motion.div
-        // {...basic}
+        {...basic}
         className='notifications-container'>
             {isLoading ? 
             <Loader/>

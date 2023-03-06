@@ -12,7 +12,7 @@ const NotificationList = ({notifications, onMarkRead}) => {
 
     return (
         <motion.ul 
-        // {...basic} 
+        {...basic} 
         style={style}>
             {notifications?.map((notification, index)=> {
                 return <Notification key={notification.id} 
