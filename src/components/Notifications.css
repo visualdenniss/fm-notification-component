@@ -3,6 +3,7 @@ main {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  padding: 20px 20px 80px;
 }
 
 .notifications-container {

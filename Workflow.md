@@ -42,7 +42,7 @@ Decide and list the states (read/unread) and different data types (comment, foll
 
 - Update the state of notifications onClick (Mark as read ✅ and on notification item itself ✅)
 
-Refactor to cleaner code
+Refactor to cleaner code ✅
 
 Animations
 Make it responsive

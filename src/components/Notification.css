@@ -110,3 +110,10 @@ li {
   color: var(--dark-grayish-blue);
   margin-top: 12px;
 }
+
+@media only screen and (max-width: 400px) {
+  .notification-message-container > p,
+  .private-message {
+    font-size: 0.8em;
+  }
+}
